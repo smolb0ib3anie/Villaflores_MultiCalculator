@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CylinderFormulas.CylinderVolume">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="Radius"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtCylinderVolRadius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Height"
+        app:layout_constraintEnd_toEndOf="@+id/txtCylinderVolRadius"
+        app:layout_constraintStart_toStartOf="@+id/txtCylinderVolRadius"
+        app:layout_constraintTop_toBottomOf="@+id/txtCylinderVolRadius" />
+
+    <EditText
+        android:id="@+id/txtCylinderVolHeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnCalcCylinderVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="@+id/txtCylinderVolHeight"
+        app:layout_constraintStart_toStartOf="@+id/txtCylinderVolHeight"
+        app:layout_constraintTop_toBottomOf="@+id/txtCylinderVolHeight" />
+
+    <TextView
+        android:id="@+id/cylinderVolumeAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Answer should be shown here"
+        app:layout_constraintEnd_toEndOf="@+id/btnCalcCylinderVolume"
+        app:layout_constraintStart_toStartOf="@+id/btnCalcCylinderVolume"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcCylinderVolume" />
+</androidx.constraintlayout.widget.ConstraintLayout>

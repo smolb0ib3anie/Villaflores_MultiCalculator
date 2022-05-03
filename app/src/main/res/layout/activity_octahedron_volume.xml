@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OctahedronFormulas.OctahedronVolume">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="184dp"
+        android:text="Edge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtOctahedronVolEdge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView16"
+        app:layout_constraintStart_toStartOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btnCalcOctahedronVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="@+id/txtOctahedronVolEdge"
+        app:layout_constraintStart_toStartOf="@+id/txtOctahedronVolEdge"
+        app:layout_constraintTop_toBottomOf="@+id/txtOctahedronVolEdge" />
+
+    <TextView
+        android:id="@+id/octahedronVolumeAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Answer should be shown here"
+        app:layout_constraintEnd_toEndOf="@+id/btnCalcOctahedronVolume"
+        app:layout_constraintStart_toStartOf="@+id/btnCalcOctahedronVolume"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcOctahedronVolume" />
+</androidx.constraintlayout.widget.ConstraintLayout>

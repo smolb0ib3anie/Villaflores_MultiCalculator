@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mcm.edu.ph.villaflores_multicalculator">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Villaflores_MultiCalculator">
+        <activity
+            android:name=".SphereFormulas.SphereVolume"
+            android:exported="false" />
+        <activity
+            android:name=".SphereFormulas.SphereArea"
+            android:exported="false" />
+        <activity
+            android:name=".OctahedronFormulas.OctahedronVolume"
+            android:exported="false" />
+        <activity
+            android:name=".OctahedronFormulas.OctahedronArea"
+            android:exported="false" />
+        <activity
+            android:name=".CylinderFormulas.CylinderVolume"
+            android:exported="false" />
+        <activity
+            android:name=".CylinderFormulas.CylinderArea"
+            android:exported="false" />
+        <activity
+            android:name=".CuboidFormulas.CuboidVolume"
+            android:exported="false" />
+        <activity
+            android:name=".CuboidFormulas.CuboidArea"
+            android:exported="false" />
+        <activity
+            android:name=".ConeFormulas.ConeVOlume"
+            android:exported="false" />
+        <activity
+            android:name=".ConeFormulas.ConeArea"
+            android:exported="false" />
+        <activity
+            android:name=".Octahedron"
+            android:exported="false" />
+        <activity
+            android:name=".Sphere"
+            android:exported="false" />
+        <activity
+            android:name=".Cone"
+            android:exported="false" />
+        <activity
+            android:name=".Cylinder"
+            android:exported="false" />
+        <activity
+            android:name=".Cuboid"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
